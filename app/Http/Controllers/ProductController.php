@@ -9,16 +9,16 @@ use App\Http\Requests\{ProductStoreRequest, ProductUpdateRequest};
 class ProductController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the product.
      */
     public function index()
     {
         $products = Product::all();
-        return view('welcome', compact('products'));
+        return view('products', compact('products'));
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Store a newly created product in storage.
      */
     public function store(ProductStoreRequest $request)
     {
@@ -32,7 +32,7 @@ class ProductController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display the specified product.
      */
     public function show(string $id)
     {
@@ -44,7 +44,7 @@ class ProductController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update the specified product in storage.
      */
     public function update(ProductUpdateRequest $request, string $id)
     {
@@ -62,11 +62,11 @@ class ProductController extends Controller
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Remove the specified product from storage.
      */
     public function destroy(Request $request, string $id)
     {
-        // try {
+        try {
             $product = Product::find($id);
             if (!$product) {
                 return back()->withErrors(['error' => 'Produto não encontrado.']);
@@ -74,8 +74,8 @@ class ProductController extends Controller
             $product->delete();
             $request->session()->flash('status', ['message' => 'Produto deletado com sucesso!', 'type' => 'PRODUCT-DELETED-SUCCESS']);
             return response()->json(['message' => 'Produto deletado com sucesso!']);
-        // } catch (\Exception $e) {
-        //     return back()->withErrors(['error' => 'Erro ao excluir o produto.']);
-        // }
+        } catch (\Exception $e) {
+            return back()->withErrors(['error' => 'Erro ao excluir o produto.']);
+        }
     }
 }
