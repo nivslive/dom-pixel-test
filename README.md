@@ -73,3 +73,7 @@ Abra um navegador da web e acesse http://localhost para visualizar seu aplicativ
 Para parar o ambiente Docker, pressione Ctrl+C no terminal em que o Sail está em execução. Em seguida, execute o seguinte comando para desligar os contêineres:
 
 ./vendor/bin/sail down
+
+
+## PRINTS
+<img src="https://img001.prntscr.com/file/img001/C1JsgWXYQ1y_5mC0vKv1_g.png">
