@@ -1,4 +1,6 @@
-## README: Iniciando o Projeto com Laravel Sail
+# 
+
+## Iniciando o Projeto com Laravel Sail
 
 Este guia fornecerá instruções detalhadas sobre como baixar, configurar e executar seu projeto Laravel usando Laravel Sail. Laravel Sail é um ambiente de desenvolvimento Docker pré-configurado para projetos Laravel, que facilita o desenvolvimento e execução de aplicativos Laravel em diferentes ambientes.
 
@@ -77,3 +79,6 @@ Para parar o ambiente Docker, pressione Ctrl+C no terminal em que o Sail está e
 
 ## PRINTS
 <img src="https://img001.prntscr.com/file/img001/C1JsgWXYQ1y_5mC0vKv1_g.png">
+
+## IMPEDIMENTOS/DESAFIOS
+Eu comecei o projeto desenvolvendo com Inertia (Laravel + Vuejs3) usando plugin de tabelas chamado DataTable. Porém notei que eu tava tornando o teste complexo demais, e decidi refazer de uma maneira mais simples usando Blades (que é a versão desse repositório).
