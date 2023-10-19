@@ -1,8 +1,7 @@
-# 
+# PROJETO CATALOGO DE PRODUTOS [DOM-PIXEL TEST]
 
-## Iniciando o Projeto com Laravel Sail
 
-Este guia fornecerá instruções detalhadas sobre como baixar, configurar e executar seu projeto Laravel usando Laravel Sail. Laravel Sail é um ambiente de desenvolvimento Docker pré-configurado para projetos Laravel, que facilita o desenvolvimento e execução de aplicativos Laravel em diferentes ambientes.
+Este guia fornecerá instruções detalhadas sobre como baixar, configurar e executar seu projeto Laravel usando Laravel Sail. Laravel Sail é um ambiente de desenvolvimento Docker pré-configurado para projetos Laravel.
 
 
 Projeto desenvolvido para o Teste da empresa dom-pixel.
