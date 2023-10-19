@@ -58,11 +58,15 @@ Execute o comando a seguir para iniciar o ambiente de desenvolvimento Sail:
 Isso iniciará os contêineres Docker e disponibilizará seu aplicativo na URL http://localhost.
 
 
-## 7. Execute as Migrações
+## 7.1. Execute as Migrações
 Para criar as tabelas do banco de dados, execute as migrações do Laravel:
 
 ./vendor/bin/sail artisan migrate
 
+## 7.2. Execute o NPM hot reloading
+Para iniciar o NPM como "watcher" usando vite, execute o seguinte comando:
+
+npm run dev
 
 
 
