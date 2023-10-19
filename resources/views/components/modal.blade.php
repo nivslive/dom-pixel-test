@@ -5,18 +5,22 @@
         color: black; 
         background: white; 
         flex-direction: column;
+        display: none;
+        /* width: 90%;
+        max-width: 800px;
+        min-width: 200px; */
     }
 
-    .modal-product-edit {
-        display: none;
-    }
     </style>
+
+
+
 @endpush
 
 
 
 @if($type === 'create')
-    <div class="p-5 rounded modal-product-create" style="display: none">
+    <div class="p-5 rounded modal-product-create">
         <div class="flex justify-between items-center">
             <h1 class="text-[15px] text-black fw-bold"> CRIAR PRODUTO</h1>
             <button class="text-[20px] text-black fw-bold" onclick="closeCreateModal()"> x </button>
