@@ -14,13 +14,8 @@
 @endpush
 
 
-<!-- ERRORS -->
-@if($errors->any())
-    {!! implode('', $errors->all('<div class="text-white">:message</div>')) !!}
-@endif
 
 @if($type === 'create')
-
     <div class="p-5 rounded modal-product-create" style="display: none">
         <div class="flex justify-between items-center">
             <h1 class="text-[15px] text-black fw-bold"> CRIAR PRODUTO</h1>

@@ -5,6 +5,12 @@
 <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
         <div class="flex flex-col overflow-x-auto text-white">
             <h1 class="text-[90px] text-white text-center fw-bold"> Catalogo de Produtos</h1>
+
+            <!-- ERRORS -->
+            @if($errors->any())
+                {!! implode('', $errors->all('<div class="text-white">:message</div>')) !!}
+            @endif
+
             <div class="sm:-mx-6 lg:-mx-8">
                 <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
                     
